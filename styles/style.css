@@ -50,6 +50,7 @@ fieldset {
   align-items: flex-end;
   margin: auto;
   gap: 30px;
+  padding-left: 17px;
 }
 
 .result {
@@ -110,7 +111,7 @@ fieldset {
 }
 
 .search-form__textfield {
-  color: rgba(255, 255, 255, 0.7);
+  color: #fff;;
   font-family: inherit;
   font-size: 18px;
   font-style: normal;
@@ -135,7 +136,9 @@ fieldset {
 }
 
 .search-form__pseudo-checkbox {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 19px;
   height: 19px;
   margin-right: 5px;
@@ -177,12 +180,16 @@ fieldset {
   font-weight: 700;
   line-height: normal;
   cursor: pointer;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   background-color: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.button:focus {
+  outline: none;
+} 
 
 .button:active {
   background-color: #545050;
@@ -199,14 +206,14 @@ fieldset {
 
 .search-form__submit-button {
   width: 194px;
-  height: 34px;
+  min-height: 34px;
   margin-top: 20px;
 }
 
 .content__details {
   display: flex;
   height: 100%;
-  width: 100%;
+  width: 416px;
   gap: 26px;
   flex-direction: column;
 }
@@ -234,11 +241,11 @@ fieldset {
   height: 298px;
   overflow-y: auto;
   position: relative;
+  overflow-x: hidden;
 }
 
 .content__list-item:not(:last-child) {
   margin-bottom: 30px;
-  max-width: 394px;
 }
 
 .content__list-item {
@@ -257,6 +264,10 @@ fieldset {
   margin: 1px;
 }
 
+.content__card-link:focus {
+ outline: none;
+}
+
 .content__card-link:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 2px;
@@ -268,7 +279,9 @@ fieldset {
 }
 
 .content__video-card-description-container {
-  width: 100%;
+  min-width: 200px;
+  width: 200px;
+  height: 103px;
 }
 
 .content__video-card-title {
@@ -279,6 +292,9 @@ fieldset {
   line-height: 30px;
   text-transform: uppercase;
   padding-bottom: 6px;
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+  overflow: hidden;
 }
 
 .content__video-card-description {
@@ -286,15 +302,19 @@ fieldset {
   font-style: normal;
   font-weight: 400;
   line-height: 16.2px;
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+  overflow: hidden;
 }
 
 .content__video-card-thumbnail {
-  min-width: 194px;
+  width: 194px;
   height: 103px;
-  object-fit: cover;
+  object-position: center;  
+  object-fit: fill;
 }
 
 .more-button {
   width: 399px;
-  height: 34px;
+  min-height: 34px;
 }
