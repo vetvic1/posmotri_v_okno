@@ -50,7 +50,6 @@ fieldset {
   align-items: flex-end;
   margin: auto;
   gap: 30px;
-  padding-left: 17px;
 }
 
 .result {
@@ -111,7 +110,7 @@ fieldset {
 }
 
 .search-form__textfield {
-  color: #fff;;
+  color: #fff;
   font-family: inherit;
   font-size: 18px;
   font-style: normal;
@@ -189,7 +188,7 @@ fieldset {
 
 .button:focus {
   outline: none;
-} 
+}
 
 .button:active {
   background-color: #545050;
@@ -239,9 +238,8 @@ fieldset {
 
 .content__list {
   height: 298px;
-  overflow-y: auto;
+  overflow: auto;
   position: relative;
-  overflow-x: hidden;
 }
 
 .content__list-item:not(:last-child) {
@@ -252,20 +250,24 @@ fieldset {
   padding: 3px;
 }
 
-.content__list-item:hover {
-  text-decoration: underline 1px;
+.content__video-card-title:hover {
   text-underline-offset: 6px;
+  text-decoration: underline 1px;
 }
 
 .content__card-link {
   display: block;
   color: #fff;
-  text-decoration: none;
   margin: 1px;
+  text-decoration: none;
 }
 
 .content__card-link:focus {
- outline: none;
+  outline: none;
+}
+
+.content__video-card-description:hover {
+  text-decoration: underline;
 }
 
 .content__card-link:focus-visible {
@@ -281,7 +283,6 @@ fieldset {
 .content__video-card-description-container {
   min-width: 200px;
   width: 200px;
-  height: 103px;
 }
 
 .content__video-card-title {
@@ -292,8 +293,8 @@ fieldset {
   line-height: 30px;
   text-transform: uppercase;
   padding-bottom: 6px;
-  text-overflow: ellipsis; 
-  white-space: nowrap; 
+  text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
 }
 
@@ -302,16 +303,16 @@ fieldset {
   font-style: normal;
   font-weight: 400;
   line-height: 16.2px;
-  text-overflow: ellipsis; 
-  white-space: nowrap; 
+  text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
 }
 
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
-  object-position: center;  
-  object-fit: fill;
+  object-position: center;
+  object-fit: cover;
 }
 
 .more-button {
