@@ -212,7 +212,7 @@ fieldset {
 .content__details {
   display: flex;
   height: 100%;
-  width: 416px;
+  width: 399px;
   gap: 26px;
   flex-direction: column;
 }
@@ -247,12 +247,7 @@ fieldset {
 }
 
 .content__list-item {
-  padding: 3px;
-}
-
-.content__video-card-title:hover {
-  text-underline-offset: 6px;
-  text-decoration: underline 1px;
+  padding: 2px;
 }
 
 .content__card-link {
@@ -266,8 +261,9 @@ fieldset {
   outline: none;
 }
 
-.content__video-card-description:hover {
-  text-decoration: underline;
+.content__card-link:hover {
+  text-underline-offset: 6px;
+  text-decoration: underline 1px;
 }
 
 .content__card-link:focus-visible {
@@ -277,12 +273,11 @@ fieldset {
 
 .content__video-card {
   display: flex;
-  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .content__video-card-description-container {
-  min-width: 200px;
-  width: 200px;
+  flex: 1;
 }
 
 .content__video-card-title {
@@ -296,26 +291,26 @@ fieldset {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  max-width: 194px;
 }
 
 .content__video-card-description {
+  max-width: 200px;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 16.2px;
   text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .content__video-card-thumbnail {
-  width: 194px;
+  max-width: 194px;
   height: 103px;
   object-position: center;
   object-fit: cover;
 }
 
 .more-button {
-  width: 399px;
+  width: 100%;
   min-height: 34px;
 }
